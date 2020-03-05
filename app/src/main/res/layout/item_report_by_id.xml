@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp">
+
+
+    <ImageView
+        android:id="@+id/mg_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_rowSpan="3"/>
+
+    <GridLayout
+        android:layout_width="0dp"
+        android:layout_height="82dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:columnCount="2"
+        android:rowCount="3">
+
+        <TextView
+            android:id="@+id/mg_ProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="ProductName" />
+
+        <TextView
+            android:id="@+id/mg_Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price" />
+
+        <TextView
+            android:id="@+id/mg_ProductId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="ProductId" />
+
+        <TextView
+            android:id="@+id/mg_Qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qty" />
+
+        <TextView
+            android:id="@+id/mg_ProductTypeId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Type_Id" />
+
+        <TextView
+            android:id="@+id/mg_ProductTypeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type_Name" />
+    </GridLayout>
+
+</LinearLayout>

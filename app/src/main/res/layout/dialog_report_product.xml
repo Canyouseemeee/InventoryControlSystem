@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ReportProductDialog"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/et_report_begin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="เริ่มต้นที่รหัสสินค้า"/>
+    <EditText
+        android:id="@+id/et_report_end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="จนถึงรหัสสินค้า"/>
+    <Button
+        android:text="ค้นหา"
+        android:id="@+id/bt_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_search_black_24dp"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bank.inventorycontrolsystem">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ReportProductOUTActivity"></activity>
+        <activity android:name=".ReportProductINActivity" />
+        <activity android:name=".ReportProductActivity" />
+        <activity android:name=".EditProductOUTActivity" />
+        <activity android:name=".InsertProductOUTActivity" />
+        <activity android:name=".ProductOUTActivity" />
+        <activity android:name=".InsertProductINActivity" />
+        <activity android:name=".EditProductINActivity" />
+        <activity android:name=".EditProductActivity" />
+        <activity android:name=".AddTypeActivity" />
+        <activity android:name=".InsertProductActivity" />
+        <activity android:name=".ProductActivity" />
+        <activity android:name=".ProductINActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
