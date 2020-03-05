@@ -32,16 +32,16 @@ public class LoginActivity extends AppCompatActivity {
         mBtnLogin = (Button) findViewById(R.id.mBtnLogin);
         mBtnRegister = (Button) findViewById(R.id.mBtnRegister);
 
-//        mBtnRegister.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(getBaseContext(), RegisterActivity.class));
-//            }
-//        });
+        mBtnRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getBaseContext(), RegisterActivity.class));
+            }
+        });
         mBtnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String sql = "SELECT * FROM user WHERE  username='"+mEdtusername.getText().toString().trim()+"'AND password='"+mEdtpassword.getText().toString().trim()+"'";
+                String sql = "SELECT * FROM user WHERE username='"+mEdtusername.getText().toString().trim()+"'AND password='"+mEdtpassword.getText().toString().trim()+"'";
                 Dru.connection(ConnectDB.getConnection())
                         .execute(sql)
                         .commit(new ExecuteQuery() {
