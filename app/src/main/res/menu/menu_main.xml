@@ -8,6 +8,10 @@
         android:title="จัดการข้อมูลสินค้า"
         app:showAsAction="collapseActionView" />
     <item
+        android:id="@+id/map"
+        android:title="แผนที่"
+        app:showAsAction="collapseActionView" />
+    <item
         android:id="@+id/Logout"
         android:title="ออกจากระบบ"
         app:showAsAction="collapseActionView" />

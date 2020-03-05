@@ -106,6 +106,9 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(getBaseContext(),LoginActivity.class));
             Toast.makeText(getBaseContext(), "ออกจากระบบ", Toast.LENGTH_SHORT).show();
         }
+        if(item.getItemId() == R.id.map){
+            startActivity(new Intent(getBaseContext(),MapDBActivity.class));
+        }
         return super.onOptionsItemSelected(item);
     }
 
