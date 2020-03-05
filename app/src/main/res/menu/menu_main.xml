@@ -7,5 +7,9 @@
         android:id="@+id/menu_main"
         android:title="จัดการข้อมูลสินค้า"
         app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/Logout"
+        android:title="ออกจากระบบ"
+        app:showAsAction="collapseActionView" />
 
 </menu>

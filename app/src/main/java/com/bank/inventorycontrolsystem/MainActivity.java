@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -89,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
@@ -99,6 +101,10 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if(item.getItemId() == R.id.menu_main){
             startActivity(new Intent(getBaseContext(),ProductActivity.class));
+        }
+        if(item.getItemId() == R.id.Logout){
+            startActivity(new Intent(getBaseContext(),LoginActivity.class));
+            Toast.makeText(getBaseContext(), "ออกจากระบบ", Toast.LENGTH_SHORT).show();
         }
         return super.onOptionsItemSelected(item);
     }
