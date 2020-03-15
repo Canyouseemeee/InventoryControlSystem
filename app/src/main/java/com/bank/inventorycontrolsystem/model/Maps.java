@@ -6,6 +6,7 @@ public class Maps {
     private double latitude;
     private double longitude;
 
+
     public Maps() {
 
     }
